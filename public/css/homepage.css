@@ -1,0 +1,563 @@
+@font-face {
+    font-family: FuturaMdBt;
+    src: url("../fonts/FuturaMediumBT.ttf");
+  }
+@font-face {
+    font-family: FuturaBold;
+    src: url("../fonts/FuturaBoldBT.ttf");
+  }
+@font-face {
+    font-family: FuturaRound;
+    src: url("../fonts/FuturaRound/Futura\ Round\ Light.ttf");
+  }
+@font-face {
+    font-family: FuturaRoundDemi;
+    src: url("../fonts/FuturaRound/Futura\ Round\ Demi.ttf");
+  }
+@font-face {
+    font-family: FuturaLtBt;
+    src: url("../fonts/FuturaRound/Futura\ Round\ Bold.ttf");
+  }
+
+*{
+    box-sizing: border-box;
+    padding:0;
+    margin: 0;
+}
+
+/* scrollbar */
+::-webkit-scrollbar {
+    width: 15px;
+  }
+  
+::-webkit-scrollbar-track {
+    box-shadow: inset 0 0 5px #898989;
+    background-color: white;
+}
+
+::-webkit-scrollbar-thumb {
+    background: #3F5FAC;
+}
+
+
+html{
+    height: 100%;
+    width: 100%;
+}
+
+body{
+    overflow-x: hidden;
+    overflow-y: auto;
+    word-break: break-all;
+
+}
+
+.landing{
+    height: 100%;
+    min-width: 100%;
+    width: 100%;
+    background-repeat: no-repeat;
+    background-image: url("../images/landingBG.jpg");
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+}
+
+.bg-holder{
+    margin: 0;
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+
+}
+.navbar-brand{
+    margin-left:-25px ;
+}
+
+.navbar{
+    width: 85%;
+    font-family: FuturaMdBt!important;
+    box-shadow: 4px 4px 7px rgba(1,1,1,0.5 ), -2px -2px 7px white ;
+    padding:5px 45px;
+    display: flex;
+    border-radius: 40px;
+    position: absolute;
+    top: 40px;
+    left: auto;
+    z-index: 100;
+}
+
+.nav-link{
+    margin-right: 20px;
+    font-family: FuturaMdBt!important;
+}
+
+.btn{
+    padding:5px!important;
+    border-radius: 100%!important;
+}
+
+.content{
+    padding:10px 40px;
+    text-align: center;
+    position: absolute;
+    top: 220px;
+    display: inline-block;
+    word-break: break-all;
+    width: 84%;
+    margin-left: auto;
+    color: white;
+}
+
+.intro{
+    font-family: FuturaRound;
+    font-size: 1.6em;
+}
+
+.buttonsHolder{
+    display: flex;
+    flex: 1;
+    flex-wrap: wrap;
+    flex-direction: row;
+    width: 80%;
+    margin-left: 10%;
+    margin-right: 10%;
+    justify-content: space-around;
+    align-items: center;
+    margin-top: 20px;
+}
+.buttons{
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    align-items: center;
+}
+.register{
+    border: 3px solid white;
+    border-radius: 40px;
+    padding:11px 20px;
+    text-align: center;
+    width: 200px;
+    font-size: 1.4em;
+    font-family: FuturaBold;
+    color: #898989;
+    text-decoration: none;
+    background-color: white;
+    box-shadow:  -1px -1px 4px white ,4px 4px 7px rgba(1,1,1,0.5 );
+
+}
+.register:hover{
+    text-decoration: none;
+    backdrop-filter: blur(20);
+    background-color: rgba(1,1,1,0.5 );
+    transition-duration: 0.6s;
+    color: white;
+    transition-timing-function: cubic-bezier(0.25, 0.46, 0.45, 0.94);    
+}
+.knowmore:hover{
+    text-decoration: none;
+    backdrop-filter: blur(20);
+    background-color: rgba(1,1,1,0.5 );
+    color: white;
+    transition-duration: 0.6s;
+    transition-timing-function: cubic-bezier(0.25, 0.46, 0.45, 0.94);    
+}
+.knowmore{
+    font-family: FuturaBold;
+    box-shadow: 2px 2px 5px rgba(1,1,1,0.5 );
+    border: 3px solid white;
+    margin: 20px 0px 20px 40px ;
+    border-radius: 40px;
+    padding:11px 20px;
+    text-align: center;
+    width: 200px;
+    font-size: 1.4em;
+color: white;
+}
+  .ml12 {
+    font-family: FuturaBold;
+    font-size: 3.4em;
+    display: inline-block;
+    word-break: break-all;
+  }
+  
+  .ml12 .letter {
+    line-height: 1em;
+    display: inline-block;
+    word-break: break-all;
+  }
+  .ml5 {
+    position: relative;
+    display: inline-block;
+    word-break: break-all;
+  }
+  
+  .ml5 .text-wrapper {
+    position: relative;
+    display: inline-block;
+    word-break: break-all;
+    padding-top: 0.1em;
+    padding-right: 0.05em;
+    padding-bottom: 0.15em;
+    line-height: 1em;
+  }
+  
+  .ml5 .line {
+    position: absolute;
+    left: 0;
+    top: 0;
+    bottom: 0;
+    margin: auto;
+    height: 3px;
+    width: 100%;
+    background-color: white;
+    transform-origin: 0.5 0;
+  }
+  
+.line1{
+    background-color: transparent!important;
+    opacity: 0!important;
+    margin: 20px;
+}
+  
+  .ml5 .letters {
+    display: inline-block;
+    opacity: 0;
+  }
+  .aboutUs{
+      height: 200%;
+      width: 100%;
+      background-repeat: no-repeat;
+      background-image: url("../images/aboutBG.jpg");
+      background-size: 100% 100%;
+      background-repeat: no-repeat;
+  }
+
+.aboutUsContent{
+    margin-bottom: 50px;
+    width: 85%;
+    margin-left: 7.5%;
+    margin-right: 7.5%;
+    margin-top: 60px;
+    height: max-content;
+    padding: 20px 40px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    font-family: FuturaBold;
+
+  }
+
+.aboutUsHeading{
+    font-size: 2.7em;
+    color: #898989;
+    font-family: FuturaBold;
+
+}
+.aboutUsInfo{
+    margin-top: 28px;
+    color: #4b4b4b;
+    font-size: 1.2em;
+    font-family: FuturaRoundDemi;
+}
+.info{
+    width: 50%;
+}
+.aboutUsImageholder{
+    background-color: #898989;
+    border-radius: 50px 0px 50px 50px;
+    width: 400px;
+    height: 400px;
+    margin-left: 7%;
+    background-repeat: no-repeat;
+    background-image: url("../images/aboutImage.png");
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+}
+
+.blue{
+    display: inline-block;
+    font-family: FuturaBold;
+    color: #3F5FAC;
+}
+
+.statusBar{
+    padding: 15px 20px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-around;
+    width: 70%;
+    margin-left: 15%;
+    margin-right: 15%;
+    background-color: #3F5FAC;
+    height: max-content;
+    border-radius: 100px;
+    box-shadow:  -1px -1px 4px #052cdb,4px 4px 7px #0b97b0;
+}
+
+.statCard{
+    text-align: center;
+    color: white;
+    height: max-content;
+    width: max-content;
+    margin: 2px 15px;
+}
+.statLabel{
+    font-family: FuturaMdBt;
+    margin: 2px 15px;
+}
+.statNum1,.statNum2,.statNum3,.statNum4{
+    font-size: 2.8em;
+    font-family: FuturaBold;
+}
+
+.upcomingEvents{
+    margin-bottom: 120px;
+    margin-top: 100px;
+    height: max-content;
+    padding: 20px 40px;
+    font-family: FuturaBold;
+}
+
+.speakers{
+    height: 70%;
+    width: 100%;
+    background-repeat: no-repeat;
+    background-image: url("../images/speakersBG.jpg");
+    background-size: 100% 70%;
+    background-repeat: no-repeat;
+    padding: 70px 0px 0px;
+}
+.speakersIntro{
+    display: inline-block;
+    line-break: auto;
+    word-break: break-all;
+    padding: 10px 20px;
+    text-align: center;
+    color:white;
+    font-size:2em;
+    font-family: FuturaBold;
+}
+.splide__slide{
+    margin-left: 25px;
+    margin-right: 25px;
+}
+
+.splide__slide{
+    margin: 25px;
+    background-color: white;
+    border-radius: 40px;
+    margin-left: 50px;
+    margin-right: 50px;
+    box-shadow:  3px 3px 15px rgba(1,1,1,0.2 ),-3px 3px 15px rgba(1,1,1,0.2 ),3px -3px 15px rgba(1,1,1,0.2 ),-3px -3px 15px rgba(1,1,1,0.2 );
+}
+.splide__arrow{
+    background-color: #E6E6E6;
+    border-radius: 5px;
+    opacity: 1;
+    width: 40px;
+    padding:35px 0px;
+}
+.splide{
+    margin-top: 100px;
+}
+.splide__name{
+    margin-left: 15px;
+    margin-bottom: 1px;
+    position: absolute;
+    bottom: 10px;
+    width: max-content;
+    text-align: center;
+    color: white;
+    font-size: 1.3em;
+    font-family: FuturaLtBt;
+    backdrop-filter: blur(20px);
+    padding:4px 8px;
+    width: max-content;
+    background-color: rgba(1,1,1,0.2 );
+    border-radius: 10px;
+}
+
+.ourPartners{
+    background-color: white;
+    width: 100%;
+}
+.ourPartnersContent{
+    width: 80%;
+    margin-left: 10%;
+    margin-top: -15%;
+    margin-right: 10%;
+}
+.partnerInfo{
+    font-family: FuturaMdBt;
+}
+.partnerImageHolder{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-around;
+    margin-top: 50px;
+    width: 90%;
+    margin-left: 5%;
+    margin-right: 5%;
+    border-radius: 2px;
+    box-shadow:  3px 3px 15px rgba(1,1,1,0.2 ),-3px 3px 15px rgba(1,1,1,0.2 ),3px -3px 15px rgba(1,1,1,0.2 ),-3px -3px 15px rgba(1,1,1,0.2 );
+
+}
+.partnerImage{
+    margin: 15px;
+    height: auto;
+    width: auto;
+    max-width: 270px;
+    max-height: 270px;
+}
+
+.footer{
+    background-color: #3D3D3D;
+    padding:20px 40px 20px;
+    margin-top: 50px;
+}
+
+.footerLogoHolder{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    margin:10px;
+}
+
+.footerLogo{
+    margin: 0px 10px;
+}
+.footerText{
+    color: white;
+    font-family: FuturaRound;
+    text-align: center;
+    margin-top: 10px;
+}
+
+.splide__slide:hover{
+    transform: scale(1.1);
+    transition-timing-function: ease-in-out;
+    transition-duration: 0.4s;
+}
+.splide__speaker{
+    padding: 2px;
+    border-radius: 40px;
+}
+
+@media only screen and (max-width: 1160px) {
+    .ml12{
+        font-size: 2.2em;
+    }
+    .aboutUsHeading{
+        font-size: 1.8em;   
+    }
+    .aboutUsImageholder{
+        height: 300px;
+        width: 300px;
+    }
+  }
+@media only screen and (max-width: 930px) {
+    .ml12{
+        font-size: 2.4em;
+    }
+    .statusBar{
+        width: 90%;
+        margin-left: 5%;
+    }
+    .ourPartnersContent{
+        width: 85%;
+        margin-left: 7.5%;
+    }
+    .info{
+        width: 100%;
+    }
+    .aboutUsHeading{
+        font-size: 2em;   
+    }
+    .aboutUsImageholder{
+        height: 350px;
+        width: 350px;
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        margin-top: 20px;
+    }
+    .aboutUsContent{ 
+        width: 90%;
+        margin-left: 5%;
+        margin-right: 5%;}
+
+  }
+@media only screen and (max-width: 620px) {
+    .ml12{
+        font-size: 1.8em;
+    }
+    .content{
+        width: 90%;
+        margin-left: 5%;
+        margin-right: 5%;
+        top: 200px;
+    }
+    .aboutUsImageholder{
+        height: 240px;
+        width: 240px;
+    }
+  }
+  
+  @media only screen and (max-width: 540px) {
+      .buttons{
+          flex-direction: column;
+      }
+      .knowmore, .register{
+          margin-left: 0;
+      }
+    }
+@media only screen and (max-width: 460px) {
+    .ml12{
+        font-size: 1.6em;
+        margin-top: 0px;
+    }
+    .content{
+
+        top: 150px;
+    }
+    .letters{
+        font-size: 0.8em;
+    }
+    .aboutUsImageholder{
+        height: 240px;
+        width: 240px;
+    }
+  }
+
+@media only screen and (max-width: 350px) {
+    .ml12{
+        font-size: 1.4em;
+        margin-top: 0px;
+    }
+    .content{
+        top: 120px;
+    }
+    .letters{
+        font-size: 0.7em;
+    }
+    .aboutUsContent{
+        width: 98%;
+        margin-right: 2%;
+        margin-left: 2%;
+    }
+    .splide__slide,.splide__speaker{
+        height: 250px!important;
+        width: 250px!important;
+    }
+    .navbar-brand{
+        display: none;
+    }
+  }
