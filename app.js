@@ -20,4 +20,8 @@ app.get("/login", (req, res) => {
   res.render("login");
 });
 
+app.get('/contact',(req,res)=>{
+  res.render('contactus');
+})
+
 app.listen(PORT, console.log("Server Up!!"));
