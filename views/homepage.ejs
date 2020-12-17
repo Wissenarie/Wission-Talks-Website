@@ -1,212 +1,201 @@
 <%- include('partials/header'); -%>
-    <div class="bg-holder">
-        <div class="landing">
-        </div>
-        <nav class="navbar navbar-expand-lg navbar-light bg-light">
-            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo01" aria-controls="navbarTogglerDemo01" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-            <a class="navbar-brand" href="#">
-                <img src="../public/logos/logo2.png" alt="wission talks logo" width="115" height="40" class="d-inline-block align-top" alt="" loading="lazy">
-            </a>
-            <div class="collapse navbar-collapse" id="navbarTogglerDemo01">
-                <ul class="navbar-nav ml-auto mt-2 mt-lg-0">
-                    <li class="nav-item active">
-                        <a class="nav-link" href="#">HOME<span class="sr-only">(current)</span></a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#">ABOUT</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#" tabindex="-1" aria-disabled="true">GALLERY</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#" tabindex="-1" aria-disabled="true">EVENTS</a>
-                    </li>
-                    <!-- <form class="form-inline my-2 my-lg-0">
-                        <button class="btn my-2 my-sm-0" type="submit"><img src="../public/images/search.png"
-                                alt="search icon" height="25" /></button>
-                    </form> -->
-                </ul>
-            </div>
-        </nav>
-        <div class="content">
-            <div class="ml5 intro">
-                <span class="text-wrapper">
-                    <span class="line line1"></span>
-                <span class="letters letters-left">WissionTalks - A motivational</span>
-                <span class="letters letters-right">initiative by Wissenaire</span>
-                <span class="line line2"></span>
-                <br><br><br>
-                </span>
-            </div>
+<div class="bg-holder">
+    <div class="landing">
+    </div>
+    <%- include('partials/navbar'); -%>
 
-            <div class="ml12">
-                <div class="row">We provide a platform to the
-                </div>
-                <div class="row">young to realize and achieve high</div>
-            </div>
-            <div class="buttonsHolder">
-                <div class="buttons">
-                    <a class="register" href="">
-                        Register
-                    </a>
-                    <a class="knowmore" href="">
-                        Know more...
-                    </a>
-                </div>
+    <div class="content">
+        <div class="ml5 intro">
+            WissionTalks - A motivational
+            initiative by Wissenaire
+            <div class="line"></div>
+
+            <br><br>
+        </div>
+
+        <div class="ml12">
+            We provide a platform to the
+            young to realize and achieve high
+        </div>
+        <div class="buttonsHolder">
+            <div class="buttons">
+                <a class="register" href="/login">
+                    Register
+                </a>
+                <a class="knowmore" href="/about">
+                    Know more...
+                </a>
             </div>
         </div>
-        <div class="aboutUs" onmouseover="loop()">
-            <div class="aboutUsContent">
-                <div class="info">
-                    <div class="aboutUsHeading">
-                        <span class="blue">About</span> the Wissenaire
-                    </div>
-                    <div class="aboutUsInfo">
-                        WissionTalks is a motivational initiative by Wissenarie. WissionTalks aims at motivating the young who aspire to change the world. We believe that this initiative will make you bounce off the walls, build up aspirations, inspire you to achieve & to dial
-                        back the hurdles WissionTalks will set you on pace.<br><br>
-                        <span class="blue">Know more...</span>
-                    </div>
-                </div>
-                <div class="aboutUsImageholder">
-                </div>
-            </div>
-            <div class="statusBar">
-                <div class="statCard">
-                    <div id="1" class="statNum1">60<span>+</span></div>
-                    <div class="statLabel">
-                        Our Speakers
-                    </div>
-                </div>
-                <div class="statCard">
-                    <div id="2" class="statNum2">
-                        40<span>+</span>
-                    </div>
-                    <div class="statLabel">
-                        Events Completed
-                    </div>
-                </div>
-                <div class="statCard">
-                    <div id="3" class="statNum3">
-                        35<span>+</span>
-                    </div>
-                    <div class="statLabel">
-                        Cities
-                    </div>
-                </div>
-                <div class="statCard">
-                    <div id="4" class="statNum4">
-                        10000<span>+</span>
-                    </div>
-                    <div class="statLabel">
-                        People Inspired
-                    </div>
-                </div>
-            </div>
-            <div class="upcomingEvents">
+    </div>
+    <div class="aboutUs" onmouseover="loop()">
+        <div class="aboutUsContent">
+            <div class="info">
                 <div class="aboutUsHeading">
-                    <span class="blue">Upcoming</span> Events
+                    <span class="blue">About</span> the Wissenaire
                 </div>
-
-            </div>
-
-            <div class="speakers">
-                <div class="speakersIntro">
-                    Previous Speakers
-                </div>
-                <div class="splide" data-splide='{"type":"loop","perPage":3,"start":1,"trimSpace":"false","pagination":false,"perMove":1,"focus":"center","gap":70,"padding":180,"fixedWidth":280,"fixedHeight":280,"flickMaxPages":2}'>
-                    <div class="splide__track">
-                        <ul class="splide__list">
-                            <li class="splide__slide">
-                                <img class="splide__speaker" height="280" width="280" src="../public/images/prevSpeakers/AdityaRamakrishna.png" />
-                                <div class="splide__name">Aditya Ramakrishna</div>
-                            </li>
-
-                            <li class="splide__slide">
-                                <img class="splide__speaker" height="280" width="280" src="../public/images/prevSpeakers/Alok Maheshwari.png" />
-                                <div class="splide__name">Alok Maheshwar</div>
-                            </li>
-
-                            <li class="splide__slide">
-                                <img class="splide__speaker" height="280" width="280" src="../public/images/prevSpeakers/Amit Mundada.png" />
-                                <div class="splide__name">Amit Mundada</div>
-                            </li>
-
-                            <li class="splide__slide">
-                                <img class="splide__speaker" height="280" width="280" src="../public/images/prevSpeakers/Anil Kumar Reddy.png" />
-                                <div class="splide__name">Anil Kumar Reddy</div>
-                            </li>
-
-                            <li class="splide__slide">
-                                <img class="splide__speaker" height="280" width="280" src="../public/images/prevSpeakers/Anshul Sinha.png" />
-                                <div class="splide__name">Anshul Sinha</div>
-                            </li>
-
-                            <li class="splide__slide">
-                                <img class="splide__speaker" height="280" width="280" src="../public/images/prevSpeakers/Anubhav Bhatnagar.png" />
-                                <div class="splide__name">Anubhav Bhatnagar</div>
-                            </li>
-                            <li class="splide__slide">
-                                <img class="splide__speaker" height="280" width="280" src="../public/images/prevSpeakers/Ashok kanna.png" />
-                                <div class="splide__name">Ashok kanna</div>
-                            </li>
-                            <li class="splide__slide">
-                                <img class="splide__speaker" height="280" width="280" src="../public/images/prevSpeakers/Chakrapani Anumula.png" />
-                                <div class="splide__name">Chakrapani Anumula</div>
-                            </li>
-                            <li class="splide__slide">
-                                <img class="splide__speaker" height="280" width="280" src="../public/images/prevSpeakers/Diwakar Singh.png" />
-                                <div class="splide__name">Diwakar Singh</div>
-                            </li>
-                            <li class="splide__slide">
-                                <img class="splide__speaker" height="280" width="280" src="../public/images/prevSpeakers/Dr. Suhas B Shetty.png" />
-                                <div class="splide__name">Dr. Suhas B Shetty</div>
-                            </li>
-                            <li class="splide__slide">
-                                <img class="splide__speaker" height="280" width="280" src="../public/images/prevSpeakers/Praveen Dorna.png" />
-                                <div class="splide__name">Praveen Dorna</div>
-                            </li>
-                            <li class="splide__slide">
-                                <img class="splide__speaker" height="280" width="280" src="../public/images/prevSpeakers/Priyanka Narula.png" />
-                                <div class="splide__name">Priyanka Narula</div>
-                            </li>
-                            <li class="splide__slide">
-                                <img class="splide__speaker" height="280" width="280" src="../public/images/prevSpeakers/Rahul Tirumalapragada.png" />
-                                <div class="splide__name">Rahul Tirumalapragada</div>
-                            </li>
-                            <li class="splide__slide">
-                                <img class="splide__speaker" height="280" width="280" src="../public/images/prevSpeakers/Tanushree Ishani.png" />
-                                <div class="splide__name">Tanushree Ishani</div>
-                            </li>
-                        </ul>
-                    </div>
+                <div class="aboutUsInfo">
+                    WissionTalks is a motivational initiative by Wissenarie. WissionTalks aims at motivating the young
+                    who aspire to change the world. We believe that this initiative will make you bounce off the walls,
+                    build up aspirations, inspire you to achieve & to dial
+                    back the hurdles WissionTalks will set you on pace.<br><br>
+                    <span class="blue">Know more...</span>
                 </div>
             </div>
-            <div class="ourPartners">
-                <div class="ourPartnersContent">
-                    <div class="aboutUsHeading">
-                        <span class="blue">Our</span> Partners
-                    </div>
-                    <div class="aboutUsInfo partnerInfo">
-                        Our objective can be procured when we connect our hands with various organizations, companies and do share a common idea.
-                    </div>
-                    <div class="partnerImageHolder">
-                        <img src="../public/logos/partners/sponsor1.png" class="partnerImage">
-                        <img src="../public/logos/partners/sponsor2.png" class="partnerImage">
-                        <img src="../public/logos/partners/sponsor3.png" class="partnerImage">
-                        <img src="../public/logos/partners/sponsor4.png" class="partnerImage">
-                        <img src="../public/logos/partners/sponsor5.png" class="partnerImage">
-                        <img src="../public/logos/partners/sponsor6.png" class="partnerImage">
-                        <img src="../public/logos/partners/sponsor7.png" class="partnerImage">
-                        <img src="../public/logos/partners/sponsor8.png" class="partnerImage">
-                        <img src="../public/logos/partners/sponsor9.png" class="partnerImage">
-                        <img src="../public/logos/partners/sponsor10.png" class="partnerImage">
-                        <img src="../public/logos/partners/sponsor11.png" class="partnerImage">
-                        <img src="../public/logos/partners/sponsor12.png" class="partnerImage">
-                        <img src="../public/logos/partners/sponsor13.png" class="partnerImage">
-
-                    </div>
+            <div class="aboutUsImageholder">
+            </div>
+        </div>
+        <div class="statusBar">
+            <div class="statCard">
+                <div id="1" class="statNum1">60<span>+</span></div>
+                <div class="statLabel">
+                    Our Speakers
                 </div>
             </div>
-            <%- include('partials/footer'); -%>
+            <div class="statCard">
+                <div id="2" class="statNum2">
+                    40<span>+</span>
+                </div>
+                <div class="statLabel">
+                    Events Completed
+                </div>
+            </div>
+            <div class="statCard">
+                <div id="3" class="statNum3">
+                    35<span>+</span>
+                </div>
+                <div class="statLabel">
+                    Cities
+                </div>
+            </div>
+            <div class="statCard">
+                <div id="4" class="statNum4">
+                    10000<span>+</span>
+                </div>
+                <div class="statLabel">
+                    People Inspired
+                </div>
+            </div>
+        </div>
+        <div class="upcomingEvents">
+            <div class="aboutUsHeading">
+                <span class="blue">Upcoming</span> Events
+            </div>
+
+        </div>
+
+        <div class="speakers">
+            <div class="speakersIntro">
+                Previous Speakers
+            </div>
+            <div class="splide"
+                data-splide='{"type":"loop","perPage":3,"start":1,"trimSpace":"false","pagination":false,"perMove":1,"focus":"center","gap":70,"padding":180,"fixedWidth":280,"fixedHeight":280,"flickMaxPages":2}'>
+                <div class="splide__track">
+                    <ul class="splide__list">
+                        <li class="splide__slide">
+                            <img class="splide__speaker" height="280" width="280"
+                                src="../public/images/prevSpeakers/AdityaRamakrishna.png" />
+                            <div class="splide__name">Aditya Ramakrishna</div>
+                        </li>
+
+                        <li class="splide__slide">
+                            <img class="splide__speaker" height="280" width="280"
+                                src="../public/images/prevSpeakers/Alok Maheshwari.png" />
+                            <div class="splide__name">Alok Maheshwar</div>
+                        </li>
+
+                        <li class="splide__slide">
+                            <img class="splide__speaker" height="280" width="280"
+                                src="../public/images/prevSpeakers/Amit Mundada.png" />
+                            <div class="splide__name">Amit Mundada</div>
+                        </li>
+
+                        <li class="splide__slide">
+                            <img class="splide__speaker" height="280" width="280"
+                                src="../public/images/prevSpeakers/Anil Kumar Reddy.png" />
+                            <div class="splide__name">Anil Kumar Reddy</div>
+                        </li>
+
+                        <li class="splide__slide">
+                            <img class="splide__speaker" height="280" width="280"
+                                src="../public/images/prevSpeakers/Anshul Sinha.png" />
+                            <div class="splide__name">Anshul Sinha</div>
+                        </li>
+
+                        <li class="splide__slide">
+                            <img class="splide__speaker" height="280" width="280"
+                                src="../public/images/prevSpeakers/Anubhav Bhatnagar.png" />
+                            <div class="splide__name">Anubhav Bhatnagar</div>
+                        </li>
+                        <li class="splide__slide">
+                            <img class="splide__speaker" height="280" width="280"
+                                src="../public/images/prevSpeakers/Ashok kanna.png" />
+                            <div class="splide__name">Ashok kanna</div>
+                        </li>
+                        <li class="splide__slide">
+                            <img class="splide__speaker" height="280" width="280"
+                                src="../public/images/prevSpeakers/Chakrapani Anumula.png" />
+                            <div class="splide__name">Chakrapani Anumula</div>
+                        </li>
+                        <li class="splide__slide">
+                            <img class="splide__speaker" height="280" width="280"
+                                src="../public/images/prevSpeakers/Diwakar Singh.png" />
+                            <div class="splide__name">Diwakar Singh</div>
+                        </li>
+                        <li class="splide__slide">
+                            <img class="splide__speaker" height="280" width="280"
+                                src="../public/images/prevSpeakers/Dr. Suhas B Shetty.png" />
+                            <div class="splide__name">Dr. Suhas B Shetty</div>
+                        </li>
+                        <li class="splide__slide">
+                            <img class="splide__speaker" height="280" width="280"
+                                src="../public/images/prevSpeakers/Praveen Dorna.png" />
+                            <div class="splide__name">Praveen Dorna</div>
+                        </li>
+                        <li class="splide__slide">
+                            <img class="splide__speaker" height="280" width="280"
+                                src="../public/images/prevSpeakers/Priyanka Narula.png" />
+                            <div class="splide__name">Priyanka Narula</div>
+                        </li>
+                        <li class="splide__slide">
+                            <img class="splide__speaker" height="280" width="280"
+                                src="../public/images/prevSpeakers/Rahul Tirumalapragada.png" />
+                            <div class="splide__name">Rahul Tirumalapragada</div>
+                        </li>
+                        <li class="splide__slide">
+                            <img class="splide__speaker" height="280" width="280"
+                                src="../public/images/prevSpeakers/Tanushree Ishani.png" />
+                            <div class="splide__name">Tanushree Ishani</div>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="ourPartners">
+            <div class="ourPartnersContent">
+                <div class="aboutUsHeading">
+                    <span class="blue">Our</span> Partners
+                </div>
+                <div class="aboutUsInfo partnerInfo">
+                    Our objective can be procured when we connect our hands with various organizations, companies and do
+                    share a common idea.
+                </div>
+                <div class="partnerImageHolder">
+                    <img src="../public/logos/partners/sponsor1.png" class="partnerImage">
+                    <img src="../public/logos/partners/sponsor2.png" class="partnerImage">
+                    <img src="../public/logos/partners/sponsor3.png" class="partnerImage">
+                    <img src="../public/logos/partners/sponsor4.png" class="partnerImage">
+                    <img src="../public/logos/partners/sponsor5.png" class="partnerImage">
+                    <img src="../public/logos/partners/sponsor6.png" class="partnerImage">
+                    <img src="../public/logos/partners/sponsor7.png" class="partnerImage">
+                    <img src="../public/logos/partners/sponsor8.png" class="partnerImage">
+                    <img src="../public/logos/partners/sponsor9.png" class="partnerImage">
+                    <img src="../public/logos/partners/sponsor10.png" class="partnerImage">
+                    <img src="../public/logos/partners/sponsor11.png" class="partnerImage">
+                    <img src="../public/logos/partners/sponsor12.png" class="partnerImage">
+                    <img src="../public/logos/partners/sponsor13.png" class="partnerImage">
+
+                </div>
+            </div>
+        </div>
+        <%- include('partials/footer'); -%>
