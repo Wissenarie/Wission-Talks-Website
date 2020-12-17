@@ -20,4 +20,17 @@ app.get("/login", (req, res) => {
   res.render("login");
 });
 
+app.get("/partners", (req, res) => {
+  res.render("partners");
+});
+app.get("/press", (req, res) => {
+  res.render("press");
+});
+app.get("/team", (req, res) => {
+  res.render("team");
+});
+app.get("/speakers", (req, res) => {
+  res.render("speakers");
+});
+
 app.listen(PORT, console.log("Server Up!!"));
