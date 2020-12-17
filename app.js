@@ -20,6 +20,7 @@ app.get("/login", (req, res) => {
   res.render("login");
 });
 
+ 
 app.get("/partners", (req, res) => {
   res.render("partners");
 });
@@ -31,6 +32,10 @@ app.get("/team", (req, res) => {
 });
 app.get("/speakers", (req, res) => {
   res.render("speakers");
-});
+}
+app.get('/contact',(req,res)=>{
+  res.render('contactus');
+})
+
 
 app.listen(PORT, console.log("Server Up!!"));
