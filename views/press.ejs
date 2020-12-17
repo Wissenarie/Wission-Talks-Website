@@ -1,0 +1,182 @@
+<%- include('partials/header')-%>
+
+<style>
+    .center {
+        display: flex;
+        align-content: center;
+        justify-content: center;
+    }
+
+    .landing {
+        height: 55vh;
+        width: 100%;
+        background-attachment: fixed;
+        background-repeat: no-repeat;
+        background-image: url("../public/images/speakersBG.jpg");
+        background-size: 100% 100%;
+        background-repeat: no-repeat;
+        margin: 0;
+        padding: 0px 7vw;
+    }
+
+    .headline {
+        display: block;
+        position: absolute;
+        font-family: FuturaBold;
+        font-size: 3.7em;
+        color: white;
+        margin-top: 200px;
+    }
+
+    .headline::before {
+        content: "";
+        position: absolute;
+        left: 0;
+        top: 70px;
+        bottom: 0;
+        margin: auto;
+        height: 5px;
+        width: 35%;
+        background-color: white;
+        transform-origin: 0.5 0;
+    }
+
+    .partners {
+        margin: -35px 0px 50px;
+        height: max-content;
+    }
+
+    .partnersBox {
+        z-index: 100;
+        background-color: white;
+        width: 80%;
+        display: flex;
+        justify-content: center;
+        flex-direction: row;
+        flex-wrap: wrap;
+        margin-left: 10%;
+        border-radius: 25px;
+        height: 600px;
+        padding: 20px;
+        box-shadow: 3px 3px 15px rgba(1, 1, 1, 0.2), -3px 3px 15px rgba(1, 1, 1, 0.2), 3px -3px 15px rgba(1, 1, 1, 0.2), -3px -3px 15px rgba(1, 1, 1, 0.2);
+    }
+
+    .head {
+        margin-top: 20px;
+        color: #1D84AF;
+        font-size: 2em;
+        font-family: FuturaBold;
+        text-align: center;
+    }
+
+    .head::before {
+        content: "";
+        position: absolute;
+        width: 10%;
+        height: 4px;
+        top: 410px;
+        bottom: 0;
+        left: 45%;
+        background-color: #1D84AF;
+    }
+</style>
+
+<div class="center">
+    <%- include('partials/navbar'); -%>
+</div>
+<div class="landing">
+    <div class="headline">PRESS COVERAGE</div>
+</div>
+<div class="partners">
+    <div class="partnersBox">
+        <div class="head">ARTICLES</div>
+    </div>
+    <div class="splide"
+        data-splide='{"type":"loop","perPage":3,"start":1,"trimSpace":"false","pagination":false,"perMove":1,"focus":"center","gap":70,"padding":180,"fixedWidth":280,"fixedHeight":280,"flickMaxPages":2}'>
+        <div class="splide__track">
+            <ul class="splide__list">
+                <li class="splide__slide">
+                    <img class="splide__speaker" height="280" width="280"
+                        src="../public/images/prevSpeakers/AdityaRamakrishna.png" />
+                    <div class="splide__name">Aditya Ramakrishna</div>
+                </li>
+
+                <li class="splide__slide">
+                    <img class="splide__speaker" height="280" width="280"
+                        src="../public/images/prevSpeakers/Alok Maheshwari.png" />
+                    <div class="splide__name">Alok Maheshwar</div>
+                </li>
+
+                <li class="splide__slide">
+                    <img class="splide__speaker" height="280" width="280"
+                        src="../public/images/prevSpeakers/Amit Mundada.png" />
+                    <div class="splide__name">Amit Mundada</div>
+                </li>
+
+                <li class="splide__slide">
+                    <img class="splide__speaker" height="280" width="280"
+                        src="../public/images/prevSpeakers/Anil Kumar Reddy.png" />
+                    <div class="splide__name">Anil Kumar Reddy</div>
+                </li>
+
+                <li class="splide__slide">
+                    <img class="splide__speaker" height="280" width="280"
+                        src="../public/images/prevSpeakers/Anshul Sinha.png" />
+                    <div class="splide__name">Anshul Sinha</div>
+                </li>
+
+                <li class="splide__slide">
+                    <img class="splide__speaker" height="280" width="280"
+                        src="../public/images/prevSpeakers/Anubhav Bhatnagar.png" />
+                    <div class="splide__name">Anubhav Bhatnagar</div>
+                </li>
+                <li class="splide__slide">
+                    <img class="splide__speaker" height="280" width="280"
+                        src="../public/images/prevSpeakers/Ashok kanna.png" />
+                    <div class="splide__name">Ashok kanna</div>
+                </li>
+                <li class="splide__slide">
+                    <img class="splide__speaker" height="280" width="280"
+                        src="../public/images/prevSpeakers/Chakrapani Anumula.png" />
+                    <div class="splide__name">Chakrapani Anumula</div>
+                </li>
+                <li class="splide__slide">
+                    <img class="splide__speaker" height="280" width="280"
+                        src="../public/images/prevSpeakers/Diwakar Singh.png" />
+                    <div class="splide__name">Diwakar Singh</div>
+                </li>
+                <li class="splide__slide">
+                    <img class="splide__speaker" height="280" width="280"
+                        src="../public/images/prevSpeakers/Dr. Suhas B Shetty.png" />
+                    <div class="splide__name">Dr. Suhas B Shetty</div>
+                </li>
+                <li class="splide__slide">
+                    <img class="splide__speaker" height="280" width="280"
+                        src="../public/images/prevSpeakers/Praveen Dorna.png" />
+                    <div class="splide__name">Praveen Dorna</div>
+                </li>
+                <li class="splide__slide">
+                    <img class="splide__speaker" height="280" width="280"
+                        src="../public/images/prevSpeakers/Priyanka Narula.png" />
+                    <div class="splide__name">Priyanka Narula</div>
+                </li>
+                <li class="splide__slide">
+                    <img class="splide__speaker" height="280" width="280"
+                        src="../public/images/prevSpeakers/Rahul Tirumalapragada.png" />
+                    <div class="splide__name">Rahul Tirumalapragada</div>
+                </li>
+                <li class="splide__slide">
+                    <img class="splide__speaker" height="280" width="280"
+                        src="../public/images/prevSpeakers/Tanushree Ishani.png" />
+                    <div class="splide__name">Tanushree Ishani</div>
+                </li>
+            </ul>
+        </div>
+    </div>
+</div>
+
+<%- include('partials/footer'); -%>
+
+<script>
+
+</script>
