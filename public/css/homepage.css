@@ -17,6 +17,10 @@
     font-family: FuturaRoundDemi;
     src: url("../fonts/FuturaRound/Futura\ Round\ Demi.ttf");
 }
+@font-face {
+    font-family: FuturaBit;
+    src: url("../fonts/FuturaBoldItalicBT.ttf");
+}
 
 @font-face {
     font-family: FuturaLtBt;
@@ -53,7 +57,6 @@ html {
 body {
     overflow-x: hidden;
     overflow-y: auto;
-    word-break: break-all;
 }
 
 .landing {
@@ -118,6 +121,11 @@ body {
 
 .intro {
     font-family: FuturaRound;
+    display: inline-block;
+    overflow-wrap: break-word;
+    word-wrap: break-word;
+    word-break: break-all;
+    word-break: break-word;
     font-size: 1.6em;
 }
 
@@ -189,21 +197,35 @@ body {
 .ml12 {
     font-family: FuturaBold;
     font-size: 3.4em;
+    text-align: center;
     display: inline-block;
+    overflow-wrap: break-word;
+    word-wrap: break-word;
     word-break: break-all;
+    word-break: break-word;
 }
+
 
 .ml12 .letter {
     line-height: 1em;
     display: inline-block;
+    overflow-wrap: break-word;
+    word-wrap: break-word;
     word-break: break-all;
+    word-break: break-word;
 }
+
 
 .ml5 {
     position: relative;
     display: inline-block;
+    overflow-wrap: break-word;
+    word-wrap: break-word;
     word-break: break-all;
+    word-break: break-word;
+
 }
+
 
 .ml5 .text-wrapper {
     position: relative;
@@ -235,7 +257,7 @@ body {
 
 .ml5 .letters {
     display: inline-block;
-    opacity: 0;
+    opacity: 1;
 }
 
 .aboutUs {
@@ -259,6 +281,7 @@ body {
     flex-direction: row;
     flex-wrap: wrap;
     font-family: FuturaBold;
+    word-break: break-all;
 }
 
 .aboutUsHeading {
@@ -272,6 +295,10 @@ body {
     color: #4b4b4b;
     font-size: 1.2em;
     font-family: FuturaRoundDemi;
+    overflow-wrap: break-word;
+    word-wrap: break-word;
+    word-break: break-all;
+    word-break: break-word;
 }
 
 .info {
@@ -525,7 +552,7 @@ body {
     }
 }
 
-@media only screen and (max-width: 620px) {
+@media only screen and (max-width: 640px) {
     .ml12 {
         font-size: 1.8em;
     }
@@ -551,7 +578,7 @@ body {
     }
 }
 
-@media only screen and (max-width: 460px) {
+@media only screen and (max-width: 470px) {
     .ml12 {
         font-size: 1.6em;
         margin-top: 0px;
@@ -568,10 +595,13 @@ body {
     }
 }
 
-@media only screen and (max-width: 350px) {
+@media only screen and (max-width: 360px) {
     .ml12 {
         font-size: 1.4em;
         margin-top: 0px;
+    }
+    .ml5{
+        font-size: 1.2em;
     }
     .content {
         top: 120px;
