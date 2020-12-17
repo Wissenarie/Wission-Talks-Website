@@ -1,0 +1,125 @@
+<%- include('partials/header')-%>
+
+<style>
+    .center {
+        display: flex;
+        align-content: center;
+        justify-content: center;
+    }
+
+    .landing {
+        height: 55vh;
+        width: 100%;
+        background-attachment: fixed;
+        background-repeat: no-repeat;
+        background-image: url("../public/images/speakersBG.jpg");
+        background-size: 100% 100%;
+        background-repeat: no-repeat;
+        margin: 0;
+        padding: 0px 7vw;
+    }
+
+    .headline {
+        display: block;
+        position: absolute;
+        font-family: FuturaBold;
+        font-size: 3.7em;
+        color: white;
+        margin-top: 200px;
+    }
+
+    .headline::before {
+        content: "";
+        position: absolute;
+        left: 0;
+        top: 70px;
+        bottom: 0;
+        margin: auto;
+        height: 5px;
+        width: 50%;
+        background-color: white;
+        transform-origin: 0.5 0;
+    }
+
+    .partners {
+        margin: -35px 0px 50px;
+        height: max-content;
+    }
+
+    .partnersBox {
+        z-index: 100;
+        background-color: white;
+        width: 80%;
+        display: flex;
+        justify-content: center;
+        flex-direction: row;
+        flex-wrap: wrap;
+        margin-left: 10%;
+        border-radius: 25px;
+        padding: 20px;
+        box-shadow: 3px 3px 15px rgba(1, 1, 1, 0.2), -3px 3px 15px rgba(1, 1, 1, 0.2), 3px -3px 15px rgba(1, 1, 1, 0.2), -3px -3px 15px rgba(1, 1, 1, 0.2);
+    }
+
+    .becomePartner {
+        border-radius: 100px;
+        background-color: #1D84AF;
+        font-family: FuturaBold;
+        color: white;
+        font-size: 1.1em;
+        margin-top: -20px;
+        padding: 4px 25px;
+        border: none;
+    }
+
+    .partnerInfo {
+        text-align: center;
+    }
+
+    .partnerImageHolder1 {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        align-items: center;
+        justify-content: space-around;
+        margin-top: 50px;
+    }
+
+    .partnerImage {
+        margin: 15px;
+        height: auto;
+        width: auto;
+    }
+</style>
+
+<div class="center">
+    <%- include('partials/navbar'); -%>
+</div>
+<div class="landing">
+    <div class="headline">PARTNERS</div>
+</div>
+<div class="partners">
+    <div class="partnersBox">
+        <div class="aboutUsInfo partnerInfo">
+            Our objective can be procured when we connect our hands with various organizations, companies and do
+            share a common idea.
+        </div>
+        <div class="partnerImageHolder1">
+            <img src="../public/logos/partners/sponsor1.png" class="partnerImage">
+            <img src="../public/logos/partners/sponsor2.png" class="partnerImage">
+            <img src="../public/logos/partners/sponsor3.png" class="partnerImage">
+            <img src="../public/logos/partners/sponsor4.png" class="partnerImage">
+            <img src="../public/logos/partners/sponsor5.png" class="partnerImage">
+            <img src="../public/logos/partners/sponsor6.png" class="partnerImage">
+            <img src="../public/logos/partners/sponsor7.png" class="partnerImage">
+            <img src="../public/logos/partners/sponsor8.png" class="partnerImage">
+            <img src="../public/logos/partners/sponsor9.png" class="partnerImage">
+            <img src="../public/logos/partners/sponsor10.png" class="partnerImage">
+            <img src="../public/logos/partners/sponsor11.png" class="partnerImage">
+            <img src="../public/logos/partners/sponsor12.png" class="partnerImage">
+            <img src="../public/logos/partners/sponsor13.png" class="partnerImage">
+
+        </div>
+    </div>
+    <div class="center"><button class="becomePartner" href="">BECOME A PARTNER</button></div>
+</div>
+<%- include('partials/footer'); -%>

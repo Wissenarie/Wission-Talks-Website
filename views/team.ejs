@@ -1,0 +1,261 @@
+<%- include('partials/header')-%>
+
+<style>
+    .center {
+        display: flex;
+        align-content: center;
+        justify-content: center;
+    }
+
+    .landing {
+        height: 55vh;
+        width: 100%;
+        background-attachment: fixed;
+        background-repeat: no-repeat;
+        background-image: url("../public/images/speakersBG.jpg");
+        background-size: 100% 100%;
+        background-repeat: no-repeat;
+        margin: 0;
+        padding: 0px 7vw;
+    }
+
+    .headline {
+        display: block;
+        position: absolute;
+        font-family: FuturaBold;
+        font-size: 3.7em;
+        color: white;
+        margin-top: 200px;
+    }
+
+    .headline::before {
+        content: "";
+        position: absolute;
+        left: 0;
+        top: 70px;
+        bottom: 0;
+        margin: auto;
+        height: 5px;
+        width: 45%;
+        background-color: white;
+        transform-origin: 0.5 0;
+    }
+
+    .team {
+        width: 100%;
+        padding: 0px 4vw;
+    }
+
+    .quote {
+        margin-top: 20px;
+        font-family: FuturaBit;
+        display: inline-block;
+        overflow-wrap: break-word;
+        word-wrap: break-word;
+        text-align: center;
+        word-break: break-all;
+        color: white;
+        word-break: break-word;
+        font-size: 2.99em;
+        padding: 0;
+        text-shadow:
+            -1.5px -1.5px 0 #1E8EB2,
+            1.5px -1.5px 0 #1E8EB2,
+            -1.5px 1.5px 0 #1E8EB2,
+            1.5px 1.5px 0 #1E8EB2;
+    }
+
+    @media only screen and (max-width: 930px) {
+        .quote {
+            font-size: 2em;
+        }
+
+        .headline {
+            font-size: 2.8em;
+        }
+    }
+
+    @media only screen and (max-width: 630px) {
+        .quote {
+            font-size: 1.7em;
+        }
+
+        .headline {
+            top: 80px;
+            font-size: 2em;
+        }
+    }
+
+    @media only screen and (max-width: 430px) {
+        .quote {
+            font-size: 1.8em;
+        }
+
+        .headline {
+            top: 60px;
+        }
+    }
+
+    .solidBack {
+        font-family: FuturaBold;
+        display: inline-block;
+        background-color: #00685D;
+        padding: 0px 10px;
+        transform: skewX(-7deg);
+    }
+
+    .teamBox {
+        margin-top: 40px;
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .teamCard {
+        width: 300px;
+        margin: 20px;
+    }
+
+    .teamCardText {
+        margin-top: 10px;
+        font-family: FuturaBold;
+        color: #4b4b4b;
+        text-align: center;
+    }
+
+    .teamCardImage {
+        margin-left: 50px;
+        margin-right: 50px;
+        height: 200px;
+        width: 200px;
+        border-radius: 20px;
+        box-shadow: 3px 3px 15px rgba(1, 1, 1, 0.2), -3px 3px 15px rgba(1, 1, 1, 0.2), 3px -3px 15px rgba(1, 1, 1, 0.2), -3px -3px 15px rgba(1, 1, 1, 0.2);
+
+    }
+</style>
+
+<div class="center">
+    <%- include('partials/navbar'); -%>
+</div>
+<div class="landing">
+    <div class="headline">OUR TEAM</div>
+</div>
+<div class="team">
+    <div class="quote">NATIONS ARE NOT MERE <div class="solidBack">BOUNDARIES</div>
+        &nbsp;&nbsp; SIMILARLY
+        ORGANIZATION IS NOT
+        JUST
+        THE <span class="solidBack">WALLS</span>
+    </div>
+    <div class="teamBox">
+        <div class="teamCard">
+            <div>
+                <img class="teamCardImage" src="../public/images/prevSpeakers/AdityaRamakrishna.png" height="200"
+                    width="200" />
+            </div>
+            <div class="teamCardText">Aditya Ramakrishna</div>
+            <div class="teamCardText">WEB DEVELOPER</div>
+
+        </div>
+        <div class="teamCard">
+            <div>
+                <img class="teamCardImage" src="../public/images/prevSpeakers/AdityaRamakrishna.png" height="200"
+                    width="200" />
+            </div>
+            <div class="teamCardText">Aditya Ramakrishna</div>
+            <div class="teamCardText">WEB DEVELOPER</div>
+
+        </div>
+        <div class="teamCard">
+            <div>
+                <img class="teamCardImage" src="../public/images/prevSpeakers/AdityaRamakrishna.png" height="200"
+                    width="200" />
+            </div>
+            <div class="teamCardText">Aditya Ramakrishna</div>
+            <div class="teamCardText">WEB DEVELOPER</div>
+
+        </div>
+        <div class="teamCard">
+            <div>
+                <img class="teamCardImage" src="../public/images/prevSpeakers/AdityaRamakrishna.png" height="200"
+                    width="200" />
+            </div>
+            <div class="teamCardText">Aditya Ramakrishna</div>
+            <div class="teamCardText">WEB DEVELOPER</div>
+
+        </div>
+        <div class="teamCard">
+            <div>
+                <img class="teamCardImage" src="../public/images/prevSpeakers/AdityaRamakrishna.png" height="200"
+                    width="200" />
+            </div>
+            <div class="teamCardText">Aditya Ramakrishna</div>
+            <div class="teamCardText">WEB DEVELOPER</div>
+
+        </div>
+        <div class="teamCard">
+            <div>
+                <img class="teamCardImage" src="../public/images/prevSpeakers/AdityaRamakrishna.png" height="200"
+                    width="200" />
+            </div>
+            <div class="teamCardText">Aditya Ramakrishna</div>
+            <div class="teamCardText">WEB DEVELOPER</div>
+
+        </div>
+        <div class="teamCard">
+            <div>
+                <img class="teamCardImage" src="../public/images/prevSpeakers/AdityaRamakrishna.png" height="200"
+                    width="200" />
+            </div>
+            <div class="teamCardText">Aditya Ramakrishna</div>
+            <div class="teamCardText">WEB DEVELOPER</div>
+
+        </div>
+        <div class="teamCard">
+            <div>
+                <img class="teamCardImage" src="../public/images/prevSpeakers/AdityaRamakrishna.png" height="200"
+                    width="200" />
+            </div>
+            <div class="teamCardText">Aditya Ramakrishna</div>
+            <div class="teamCardText">WEB DEVELOPER</div>
+
+        </div>
+        <div class="teamCard">
+            <div>
+                <img class="teamCardImage" src="../public/images/prevSpeakers/AdityaRamakrishna.png" height="200"
+                    width="200" />
+            </div>
+            <div class="teamCardText">Aditya Ramakrishna</div>
+            <div class="teamCardText">WEB DEVELOPER</div>
+
+        </div>
+        <div class="teamCard">
+            <div>
+                <img class="teamCardImage" src="../public/images/prevSpeakers/AdityaRamakrishna.png" height="200"
+                    width="200" />
+            </div>
+            <div class="teamCardText">Aditya Ramakrishna</div>
+            <div class="teamCardText">WEB DEVELOPER</div>
+
+        </div>
+        <div class="teamCard">
+            <div>
+                <img class="teamCardImage" src="../public/images/prevSpeakers/AdityaRamakrishna.png" height="200"
+                    width="200" />
+            </div>
+            <div class="teamCardText">Aditya Ramakrishna</div>
+            <div class="teamCardText">WEB DEVELOPER</div>
+
+        </div>
+
+    </div>
+
+</div>
+
+<%- include('partials/footer'); -%>
+
+<script>
+
+</script>
