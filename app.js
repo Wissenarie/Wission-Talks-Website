@@ -4,6 +4,8 @@ var PORT = process.env.PORT || 3000;
   (bodyparser = require("body-parser")),
   (app = express());
 
+const timeline = require("./data/timeline.json");
+
 //App Config
 app.set("view engine", "ejs");
 app.use("*/public", express.static("public/"));
@@ -18,6 +20,27 @@ app.get("/", function (req, res) {
 
 app.get("/login", (req, res) => {
   res.render("login");
+});
+
+
+app.get("/contact", (req, res) => {
+  res.render("contactus");
+});
+
+app.get("/webinars", (req, res) => {
+  res.render("webinars");
+});
+
+app.get("/timeline", (req, res) => {
+  res.render("timeline", { data: timeline });
+});
+
+app.get("/events", (req, res) => {
+  res.render("events");
+});
+
+app.get("/aboutus", (req, res) => {
+  res.render("aboutus");
 });
 
  
@@ -36,6 +59,7 @@ app.get("/speakers", (req, res) => {
 app.get('/contact',(req,res)=>{
   res.render('contactus');
 })
+
 
 
 app.listen(PORT, console.log("Server Up!!"));
