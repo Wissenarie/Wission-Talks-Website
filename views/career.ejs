@@ -1,0 +1,247 @@
+<%- include('partials/header')-%>
+
+<style>
+    .center {
+        display: flex;
+        align-content: center;
+        justify-content: center;
+    }
+
+    .landing {
+        height: 55vh;
+        width: 100%;
+        background-attachment: fixed;
+        background-repeat: no-repeat;
+        background-image: url("../public/images/speakersBG.jpg");
+        background-size: 100% 100%;
+        background-repeat: no-repeat;
+        margin: 0;
+        padding: 0px 7vw;
+    }
+
+    .headline {
+        display: block;
+        position: absolute;
+        font-family: FuturaBold;
+        font-size: 3.7em;
+        color: white;
+        margin-top: 200px;
+    }
+
+    .headline::before {
+        content: "";
+        position: absolute;
+        left: 0;
+        top: 70px;
+        bottom: 0;
+        margin: auto;
+        height: 5px;
+        width: 45%;
+        background-color: white;
+        transform-origin: 0.5 0;
+    }
+
+    .team {
+        width: 100%;
+        padding: 0px 4vw;
+    }
+
+    .quote {
+        margin-top: 20px;
+        font-family: FuturaBit;
+        display: block;
+        overflow-wrap: break-word;
+        word-wrap: break-word;
+        text-align: center;
+        word-break: break-all;
+        color: white;
+        word-break: break-word;
+        font-size: 2.99em;
+        padding: 2px;
+        text-shadow:
+            -1.5px -1.5px 0 #1E8EB2,
+            1.5px -1.5px 0 #1E8EB2,
+            -1.5px 1.5px 0 #1E8EB2,
+            1.5px 1.5px 0 #1E8EB2;
+    }
+
+    .careerQuote {
+        margin-top: 50px;
+        font-family: FuturaBold;
+        color: #515151;
+        text-align: center;
+        font-size: 1.5em;
+
+    }
+
+    .fellowShip {
+        margin-top: 40px;
+        padding: 40px 0px;
+        text-align: center;
+        background-size: 100% 100%;
+        background-color: lightgrey;
+        background-attachment: fixed;
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+
+    .fellowShipLine {
+        font-size: 2.1em;
+        text-align: center;
+        font-family: FuturaBold;
+        color: #4b4b4b;
+    }
+
+    .fellowShipButton {
+        display: block;
+        margin: auto;
+        background-color: #188AAF;
+        border-radius: 20px;
+        margin-top: 10px;
+        padding: 5px 40px;
+        font-family: FuturaMdBt;
+        font-size: 1.2em;
+        border: none;
+        color: white;
+    }
+
+
+    .careerBox {
+        margin-top: 50px;
+        width: 90%;
+        margin-left: 5%;
+        margin-right: 5%;
+        text-align: center;
+        box-shadow: 3px 3px 15px rgba(41, 41, 41, 0.2), -3px 3px 15px rgba(41, 41, 41, 0.2), 3px -3px 15px rgba(41, 41, 41, 0.2), -3px -3px 15px rgba(41, 41, 41, 0.2);
+    }
+
+    .blue {
+        text-align: center;
+        color: #188AAF;
+    }
+
+    .black {
+        color: #2c2c2c;
+    }
+
+    .careerContact {
+        margin-top: 40px;
+        text-align: center;
+        font-size: 1.3em;
+        font-family: FuturaBold;
+    }
+
+    @media only screen and (max-width: 930px) {
+        .quote {
+            font-size: 2em;
+        }
+
+        .headline {
+            font-size: 2.8em;
+        }
+
+        .fellowShipLine {
+            font-size: 1.7em;
+        }
+
+        .careerQuote {
+            font-size: 1.2em;
+        }
+
+        .fellowShipButton {
+            font-size: 1.1em;
+        }
+    }
+
+    @media only screen and (max-width: 630px) {
+        .quote {
+            font-size: 1.7em;
+        }
+
+        .headline {
+            top: 80px;
+            font-size: 2em;
+        }
+
+        .fellowShipLine {
+            font-size: 1.4em;
+        }
+    }
+
+    @media only screen and (max-width: 430px) {
+        .quote {
+            font-size: 1.8em;
+        }
+
+        .headline {
+            top: 60px;
+        }
+
+        .fellowShipLine {
+            font-size: 1.2em;
+        }
+
+        .careerQuote {
+            font-size: 1em;
+        }
+
+        .fellowShipButton {
+            font-size: 0.9em;
+        }
+    }
+
+    .solidBack {
+        font-family: FuturaBold;
+        display: inline-block;
+        background-color: #00685D;
+        padding: 0px 10px;
+        transform: skewX(-7deg);
+    }
+
+    .Email {
+        margin-top: 30px;
+        font-size: 1.3em;
+        font-family: FuturaBold;
+    }
+</style>
+
+<div class="center">
+    <%- include('partials/navbar'); -%>
+</div>
+<div class="landing">
+    <div class="headline">CAREER</div>
+</div>
+<div class="team">
+    <div class="quote">
+        <div class="solidBack">OUTSHINE</div> YOURSELF
+        <br>BY <span class="solidBack">UNITING </span> WITH US
+    </div>
+    <div class="careerQuote">We are a kind of people who are often willing to greet<br>mostly commited, hardworking who
+        accept in the<br>establishment of beliefs withour resisting their fears.
+    </div>
+
+</div>
+<div class="fellowShip">
+    <div class="fellowShipLine black">Wissenarie Innovation Fellowship Program</div>
+    <button class="fellowShipButton"> Join Wission Fellowship </button>
+</div>
+<div class="careerBox">
+    <div class="careerQuote blue">Wission Talks are ever prepared to approve <br> all the young and energetic minds into
+        our squad.</div>
+    <div class="careerContact black">
+        If you all want to be a part of such a potential <br> team then do drop your profiles at
+    </div>
+    <div class="Email blue">
+        careers@wissiontalks.com
+    </div>
+    <div class="careerContact black">
+        And get ready to accelarate your Journey with us.
+    </div>
+    <br><br><br>
+</div>
+
+<%- include('partials/footer'); -%>
+
+<script>
+
+</script>
