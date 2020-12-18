@@ -1,0 +1,249 @@
+<%- include('partials/header')-%>
+
+<style>
+    .center {
+        display: flex;
+        align-content: center;
+        justify-content: center;
+    }
+
+    .landing {
+        height: 55vh;
+        width: 100%;
+        background-attachment: fixed;
+        background-repeat: no-repeat;
+        background-image: url("../public/images/speakersBG.jpg");
+        background-size: 100% 100%;
+        background-repeat: no-repeat;
+        margin: 0;
+        padding: 0px 7vw;
+    }
+
+    .headline1 {
+        display: block;
+        position: absolute;
+        font-family: FuturaBold;
+        font-size: 3.7em;
+        color: white;
+        margin-top: 200px;
+    }
+
+    .headline1::before {
+        content: "";
+        position: absolute;
+        left: 0;
+        top: 70px;
+        bottom: 0;
+        margin: auto;
+        height: 5px;
+        width: 100%;
+        background-color: white;
+        transform-origin: 0.5 0;
+    }
+
+    .team {
+        width: 100%;
+        padding: 0px 4vw;
+        text-align: center;
+    }
+
+    .quote {
+        margin-top: 20px;
+        font-family: FuturaBit;
+        display: inline-block;
+        overflow-wrap: break-word;
+        word-wrap: break-word;
+        text-align: center;
+        word-break: break-all;
+        color: white;
+        line-height: 1.5em;
+        word-break: break-word;
+        font-size: 2.99em;
+        padding: 0;
+        text-shadow:
+            -1.5px -1.5px 0 #1E8EB2,
+            1.5px -1.5px 0 #1E8EB2,
+            -1.5px 1.5px 0 #1E8EB2,
+            1.5px 1.5px 0 #1E8EB2;
+    }
+
+    @media only screen and (max-width: 930px) {
+        .quote {
+            font-size: 2em;
+        }
+
+        .headline1 {
+            font-size: 2.8em;
+        }
+    }
+
+    @media only screen and (max-width: 630px) {
+        .quote {
+            font-size: 1.7em;
+        }
+
+        .headline1 {
+            top: 80px;
+            font-size: 2em;
+        }
+    }
+
+    @media only screen and (max-width: 430px) {
+        .quote {
+            font-size: 1.8em;
+        }
+
+        .headline1 {
+            top: 60px;
+        }
+    }
+
+    .solidBack {
+        font-family: FuturaBold;
+        display: inline-block;
+        background-color: #00685D;
+        padding: 0px 10px;
+        transform: skewX(-7deg);
+    }
+
+    .teamBox {
+        margin-top: 40px;
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .teamCard {
+        width: 300px;
+        margin: 20px;
+    }
+
+    .teamCardText {
+        margin-top: 10px;
+        font-family: FuturaBold;
+        color: #4b4b4b;
+        text-align: center;
+    }
+
+    .teamCardImage {
+        padding: 0px;
+        margin-left: 50px;
+        margin-right: 50px;
+        height: 200px;
+        width: 200px;
+        border-radius: 20px;
+        box-shadow: 3px 3px 15px rgba(1, 1, 1, 0.2), -3px 3px 15px rgba(1, 1, 1, 0.2), 3px -3px 15px rgba(1, 1, 1, 0.2), -3px -3px 15px rgba(1, 1, 1, 0.2);
+
+    }
+
+    .modal-content {
+        border-radius: 28px;
+    }
+
+    .speakerImage {
+        width: 40%;
+        padding: 1px;
+        float: left;
+    }
+
+    .speakerContent {
+        word-break: break-all;
+        word-wrap: break-word;
+        width: 60%;
+        padding: 20px;
+        float: right;
+    }
+
+    .speakerName {
+        font-size: 2.2em;
+
+        font-family: FuturaBold;
+
+    }
+
+    .speakerTagline {
+        font-size: 1.2em;
+        font-family: FuturaMdBt;
+        margin-top: 40px;
+    }
+
+    .speakerInfo {
+        font-family: FuturaMdBt;
+        margin-top: 50px;
+    }
+
+    .modal {
+        backdrop-filter: blur(10px);
+    }
+</style>
+
+<div class="center">
+    <%- include('partials/navbar'); -%>
+</div>
+<div class="landing">
+    <div class="headline1">SPEAKERS</div>
+</div>
+<div class="team">
+    <div class="quote">
+        < < < THE MORE YOU <div class="solidBack"> LISTEN
+    </div> > > > <br>
+    THE
+    MORE YOU INSPIRE <span class="solidBack">YOURSELF</span>
+</div>
+<div class="teamBox">
+    <div class="teamCard">
+        <div>
+            <img class="btn btn-default show-modal teamCardImage"
+                src="../public/images/prevSpeakers/AdityaRamakrishna.png" height="200" width="200" />
+        </div>
+        <div class="teamCardText">Aditya Rmakrishna</div>
+
+    </div>
+
+</div>
+
+</div>
+
+
+<div id="testmodal" class="modal fade">
+    <div class="modal-dialog modal-xl">
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+            </div>
+            <div class="modal-body">
+                <div class="speakerImage"> <img class="" src="../public/images/prevSpeakers/AdityaRamakrishna.png"
+                        height="100%" width="100%" /></div>
+                <div class="speakerContent">
+                    <div class="speakerName">Aditya Ramakrishna</div>
+                    <div class="speakerTagline"> Sed ut perspiciatis unde omnis iste natus error sit</div>
+                    <div class="speakerInfo">
+                        Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque
+                        laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto
+                        beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut
+                        odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt.
+                        Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit,
+                        sed quia non numquam eius modi tempora incidunt ut labore et </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- if being hardcoded copy paste the above template and change all the info accordingly -->
+<%- include('partials/footer'); -%>
+
+<script>$(document).ready(function () {
+        var show_btn = $('.show-modal');
+        var show_btn = $('.show-modal');
+        //$("#testmodal").modal('show');
+
+        show_btn.click(function () {
+            $("#testmodal").modal('show');
+        })
+    });
+
+</script>
