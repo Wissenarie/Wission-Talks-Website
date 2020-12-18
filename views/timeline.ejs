@@ -1,92 +1,77 @@
-<%- include('partials/header')-%>
-
+<%-include("partials/header")-%>
     <style>
-        body {
+        .banner {
+            width: 100%;
+            height: 400px;
             background-image: url("../public/images/speakersBG.jpg");
             background-color: #cccccc;
+            display: flex;
+            justify-content: center;
         }
         
-        .footer {
-            position: absolute;
-            width: 100%;
-            bottom: 0;
+        h1 {
+            margin: 250px auto;
+            color: white;
+            font-weight: 700;
+            letter-spacing: 2px;
+            text-decoration: underline;
         }
         
-        .login-card {
-            height: 300px;
-            border-radius: 20px;
-        }
-        
-        .login-row {
-            margin: 10px auto;
-        }
-        
-        .login-text {
-            font-weight: 500;
-            font-size: xx-large;
-        }
-        
-        .form-control {
-            border-radius: 15px;
-        }
-        
-        .login-btn {
-            border-radius: 15px;
-            font-weight: 600;
-        }
-        
-        .heading {
+        .circle {
+            height: 60px;
+            width: 60px;
+            background-color: #22d1ee;
+            border-radius: 50%;
+            color: #ffffff;
             text-align: center;
-            margin-top: 20px;
         }
         
-        h3 {
-            color: white;
+        small {
+            font-weight: 400;
+            font-size: small;
+        }
+        
+        .circle p {
+            margin-top: -6px;
             font-weight: 600;
-            font-size: 80px;
-        }
-        
-        .talks {
-            margin-top: -22px;
-            margin-left: 220px;
-            color: white;
-            font-weight: 300;
-            letter-spacing: 4px;
             font-size: large;
         }
+        
+        .timeline-holder {
+            display: flex;
+            justify-content: space-evenly;
+        }
+        
+        .timeline-div {
+            height: 50px;
+            border-radius: 15px;
+            margin-top: 6px;
+            border: none;
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+            font-size: large;
+            color: black;
+        }
     </style>
-    <div class="heading ">
-        <h3>Wission</h3>
-        <p class="talks">TALKS</p>
+
+    <div class="banner">
+        <%- include('partials/navbar'); -%>
+            <h1><span class="contact">TIMELINE</span></h1>
     </div>
 
-    <div class="row login-row">
+    <div class="container p-5">
 
-        <div class=" text-center login-card shadow-lg p-3 mb-5 bg-white card col-md-4 offset-md-4 p-4">
-            <p class="login-text">LOGIN</p>
-            <div>
-                <form action="" method="post">
-                    <div class="form-group text-left px-5">
-                        <i class="fa fa-user icon"></i>
-                        <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="User Id">
-                        <!-- <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone
-                            else.</small> -->
-                    </div>
-                    <div class="form-group px-5">
-                        <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Password">
-                    </div>
-                    <button type="button " class="btn px-3 py-1 btn-warning login-btn" data-toggle="button" aria-pressed="false" autocomplete="off">
-                        LOGIN
-                    </button>
-                </form>
+        <% data.forEach((timeline)=>{ %>
+            <div class="timeline-holder">
+                <div class="circle mb-5 py-3">
+                    <small>Dec</small>
+                    <p>15</p>
+                </div>
+                <div class="col-md-7 timeline-div card shadow-lg py-2">
+                    <%=timeline.Name%>
+                </div>
             </div>
-            <div class="px-2">
-                <hr>
-                <small id="emailHelp" class="form-text text-muted">Already have an account? <a href=""><strong
-                            style="color:black">Sign up</strongs></a>
-                </small>
-            </div>
-        </div>
+            <% })%>
+
     </div>
     <div class="footer">
         <div class="footerLogoHolder">
@@ -150,6 +135,7 @@
             Copyrights © Wissiontalks. All rights reserved
         </div>
     </div>
+
     <script>
         // new Splide('.splide').mount();
         document.addEventListener('DOMContentLoaded', function() {
